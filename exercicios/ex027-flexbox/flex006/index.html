@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexible Box</title>
+  <style>
+    div.conteiner {
+      background-color: lightsalmon;
+      border: 1px solid black;
+      margin-bottom: 10px;
+      display: flex;
+      flex-flow: row wrap;
+      height: 300px;
+      align-content: space-evenly;
+    }
+
+    div.conteiner2 {
+      background-color: lightseagreen;
+      border: 1px solid black;
+      display: flex;
+      flex-flow: row wrap;
+      height: 300px;
+      align-items: space-evenly;
+    }
+
+    div.item {
+      background-color: lightblue;
+      border: 1px solid black;
+      text-align: center;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Diferença entre align content e align items</h1>
+  <div class="conteiner">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+    <div class="item">G</div>
+    <div class="item">H</div>
+    <div class="item">I</div>
+    <div class="item">J</div>
+    <div class="item">K</div>
+    <div class="item">L</div>
+    <div class="item">M</div>
+  </div>
+
+  <div class="conteiner2">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+    <div class="item">G</div>
+    <div class="item">H</div>
+    <div class="item">I</div>
+    <div class="item">J</div>
+    <div class="item">K</div>
+    <div class="item">L</div>
+    <div class="item">M</div>
+  </div>
+</body>
+</html>
