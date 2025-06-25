@@ -13,16 +13,17 @@
     div.container {
       border: 3px solid blue;
       background-color: #eee;
-      height: 250px;
+      padding: 10px;
+      margin: 10px;
+      
       display: grid;
-      grid-template-columns: auto auto auto;
-      grid-template-rows: auto auto auto;
-      gap: 5px;
-      padding: 5px;
-      align-items: normal;
-      justify-items: normal;
-      align-content: normal;
-      justify-content: normal;
+      grid-template: repeat(3, 80px) / repeat(3, 1fr);
+      grid-auto-flow: column;
+      grid-auto-rows: 80px;
+      grid-auto-columns: 1fr;
+      gap: 10px;
+      place-items: normal normal;
+      place-content: normal normal;
     }
 
     div.item {
@@ -43,6 +44,8 @@
     <div class="item">G</div>
     <div class="item">H</div>
     <div class="item">I</div>
+    <div class="item">J</div>
+
   </div>
 </body>
 </html>
