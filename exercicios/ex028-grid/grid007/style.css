@@ -1,0 +1,38 @@
+.container {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 4fr 2fr 15fr 1fr;
+  grid-template-areas: 
+    "header header"
+    "menu menu"
+    "principal secundario"
+    "footer footer"
+  ;
+}
+
+header {
+  border: inherit;
+  grid-area: header;
+}
+
+nav {
+  border: inherit;
+  grid-area: menu;
+}
+
+section.principal {
+  border: inherit;
+  grid-area: principal;
+}
+
+section.secundario {
+  border: inherit;
+  grid-area: secundario;
+}
+
+footer {
+  border: inherit;
+  grid-area: footer;
+}
+
